@@ -9,177 +9,51 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="449dp"
-        android:layout_height="332dp"
-        android:layout_marginTop="126dp"
-        android:layout_marginBottom="200dp"
+        android:layout_width="450dp"
+        android:layout_height="320dp"
+        android:layout_marginEnd="44dp"
         android:background="#00F10303"
         android:backgroundTint="#ADCDDC39"
         android:backgroundTintMode="screen"
-        android:translationY="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.812"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.362" />
-
-    <TextView
-        android:id="@+id/lblLong"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/lblLong"
-        android:translationX="40dp"
-        android:translationY="10dp"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/lblLat" />
-
-    <TextView
-        android:id="@+id/pressureValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="172dp"
-        android:text="@string/textSea"
-        android:translationX="80dp"
-        android:translationY="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/directionValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="172dp"
-        android:text="@string/textWDir"
-        android:translationX="80dp"
-        android:translationY="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pressureValue" />
-
-    <TextView
-        android:id="@+id/lblWSpeed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="158dp"
-        android:backgroundTint="#3F51B5"
-        android:text="@string/lblWSpeed"
-        android:translationX="40dp"
-        android:translationY="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/speedValue"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/lblWDir" />
-
-    <TextView
-        android:id="@+id/lblSea"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="@string/lblSea"
-        android:translationX="40dp"
-        android:translationY="20dp"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/lblLong" />
+        app:layout_constraintVertical_bias="0.493" />
 
     <TextView
         android:id="@+id/lblWDir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="210dp"
         android:text="@string/lblWDir"
-        android:translationX="40dp"
-        android:translationY="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/directionValue"
-        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/lblLat"
         app:layout_constraintTop_toBottomOf="@+id/lblSea" />
 
     <TextView
         android:id="@+id/lblTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="275dp"
         android:layout_marginTop="16dp"
         android:text="@string/lblTemp"
-        android:translationX="40dp"
-        android:translationY="20dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lblLat"
         app:layout_constraintTop_toBottomOf="@+id/lblWSpeed" />
 
     <TextView
-        android:id="@+id/lblTime"
+        android:id="@+id/pressureValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="275dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/lblTime"
-        android:translationX="40dp"
-        android:translationY="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblTemp" />
-
-    <TextView
-        android:id="@+id/speedValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="172dp"
-        android:text="@string/textWSpeed"
-        android:translationX="80dp"
-        android:translationY="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/directionValue" />
-
-    <TextView
-        android:id="@+id/tempValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="172dp"
-        android:text="@string/textTemp"
-        android:translationX="80dp"
-        android:translationY="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/speedValue" />
-
-    <TextView
-        android:id="@+id/timeValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="172dp"
-        android:text="@string/textTime"
-        android:translationX="80dp"
-        android:translationY="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tempValue" />
-
-    <EditText
-        android:id="@+id/textLong"
-        android:layout_width="120dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="96dp"
-        android:autofillHints=""
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:hint="@string/textLong"
-        android:inputType="numberDecimal|numberSigned"
-        android:textColorHint="#000000"
-        android:translationX="20dp"
-        android:translationY="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textLat" />
+        android:text="@string/textSea"
+        app:layout_constraintBottom_toBottomOf="@+id/lblSea"
+        app:layout_constraintStart_toStartOf="@+id/textLat"
+        app:layout_constraintTop_toTopOf="@+id/lblSea"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/textLat"
         android:layout_width="120dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="256dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
         android:autofillHints=""
         android:background="#FFFFFF"
         android:backgroundTint="#000000"
@@ -188,47 +62,136 @@
         android:hint="@string/textLat"
         android:inputType="numberDecimal|numberSigned"
         android:textColorHint="#000000"
-        android:translationX="20dp"
-        android:translationY="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/lblLat"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/lblLat"
+        app:layout_constraintVertical_bias="0.458" />
 
     <TextView
         android:id="@+id/lblLat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:text="@string/lblLat"
-        android:translationX="40dp"
-        android:translationY="20dp"
         app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/textLong"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/textLong"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/lblLong"
+        app:layout_constraintEnd_toEndOf="@+id/textLat"
+        app:layout_constraintTop_toTopOf="@+id/lblLong"
+        app:layout_constraintVertical_bias="0.291" />
+
+    <TextView
+        android:id="@+id/lblWSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/lblWSpeed"
+        app:layout_constraintStart_toStartOf="@+id/lblLat"
+        app:layout_constraintTop_toBottomOf="@+id/lblWDir" />
+
+    <TextView
+        android:id="@+id/speedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textWSpeed"
+        app:layout_constraintBottom_toBottomOf="@+id/lblWSpeed"
+        app:layout_constraintStart_toStartOf="@+id/textLat"
+        app:layout_constraintTop_toTopOf="@+id/lblWSpeed"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tempValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textTemp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblTemp"
+        app:layout_constraintStart_toStartOf="@+id/textLat"
+        app:layout_constraintTop_toTopOf="@+id/lblTemp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/directionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textWDir"
+        app:layout_constraintBottom_toBottomOf="@+id/lblWDir"
+        app:layout_constraintStart_toStartOf="@+id/textLat"
+        app:layout_constraintTop_toTopOf="@+id/lblWDir"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/timeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textTime"
+        app:layout_constraintBottom_toBottomOf="@+id/lblTime"
+        app:layout_constraintStart_toStartOf="@+id/textLat"
+        app:layout_constraintTop_toTopOf="@+id/lblTime"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lblTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lblTime"
+        app:layout_constraintStart_toStartOf="@+id/lblLat"
+        app:layout_constraintTop_toBottomOf="@+id/lblTemp" />
+
+    <TextView
+        android:id="@+id/lblSea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/lblSea"
+        app:layout_constraintStart_toStartOf="@+id/lblLat"
+        app:layout_constraintTop_toBottomOf="@+id/lblLong" />
+
+    <TextView
+        android:id="@+id/lblLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/lblLong"
+        app:layout_constraintStart_toStartOf="@+id/lblLat"
+        app:layout_constraintTop_toBottomOf="@+id/lblLat" />
 
     <ImageView
         android:id="@+id/weatherImage"
         android:layout_width="144dp"
-        android:layout_height="177dp"
-        android:layout_marginTop="44dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="60dp"
         android:contentDescription="@string/imgDesc"
         android:src="@drawable/clear_day"
-        android:translationY="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/btnUpdate"
         android:layout_width="169dp"
         android:layout_height="60dp"
+        android:layout_marginTop="24dp"
         android:background="#CCDC38"
         android:text="@string/btnUpdate"
         android:textColor="@color/black"
-        android:translationY="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/weatherImage"
+        app:layout_constraintStart_toStartOf="@+id/weatherImage"
         app:layout_constraintTop_toBottomOf="@+id/weatherImage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

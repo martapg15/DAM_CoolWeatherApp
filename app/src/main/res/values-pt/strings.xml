@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CoolWeatherAPP</string>
+    <string name="lblSea">Pressão ao Nível do Mar</string>
+    <string name="lblTemp">Temperatura</string>
+    <string name="lblTime">Horas</string>
+    <string name="lblWDir">Direção do Vento</string>
+    <string name="lblWSpeed">Velocidade do Vento</string>
+    <string name="btnUpdate">Atualizar</string>
+</resources>

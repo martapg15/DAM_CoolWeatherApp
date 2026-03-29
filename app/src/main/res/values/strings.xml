@@ -1,19 +1,19 @@
 <resources>
     <string name="app_name">CoolWeatherAPP</string>
-    <string name="textSea">textSea</string>
-    <string name="lblLat">lblLat</string>
+    <string name="textSea" translatable="false">textSea</string>
+    <string name="lblLat" translatable="false">Latitude</string>
     <string name="lblTime">lblTime</string>
-    <string name="lblLong">lblLong</string>
+    <string name="lblLong" translatable="false">Longitude</string>
     <string name="lblSea">lblSea</string>
     <string name="lblWDir">lblWDir</string>
     <string name="lblWSpeed">lblWSpeed</string>
     <string name="lblTemp">lblTemp</string>
-    <string name="textTemp">textTemp</string>
-    <string name="textTime">textTime</string>
-    <string name="textWSpeed">textWSpeed</string>
-    <string name="textWDir">textWDir</string>
-    <string name="textLat">textLat</string>
-    <string name="textLong">textLong</string>
-    <string name="imgDesc">imgDesc</string>
+    <string name="textTemp" translatable="false">textTemp</string>
+    <string name="textTime" translatable="false">textTime</string>
+    <string name="textWSpeed" translatable="false">textWSpeed</string>
+    <string name="textWDir" translatable="false">textWDir</string>
+    <string name="textLat" translatable="false">textLat</string>
+    <string name="textLong" translatable="false">textLong</string>
+    <string name="imgDesc" translatable="false">imgDesc</string>
     <string name="btnUpdate">btnUpdate</string>
 </resources>
