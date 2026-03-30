@@ -8,7 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
-    private var day: Boolean = false
+    private var day: Boolean = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         when (resources.configuration.orientation) {
