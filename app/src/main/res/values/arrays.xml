@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weather_codes">
+        <item>0|Clear Sky|clear_</item>
+        <item>1|Mainly Clear|mostly_clear_</item>
+        <item>2|Partly Cloudy|partly_cloudy_</item>
+        <item>3|Overcast|cloudy</item>
+        <item>45|Fog|fog</item>
+        <item>48|Depositing Rime Fog|fog</item>
+        <item>51|Drizzle Light|drizzle</item>
+        <item>53|Drizzle Moderate|drizzle</item>
+        <item>55|Drizzle Dense|drizzle</item>
+        <item>56|Freezing Drizzle Light|freezing_drizzle</item>
+        <item>57|Freezing Drizzle Dense|freezing_drizzle</item>
+        <item>61|Rain Slight|rain_light</item>
+        <item>63|Rain Moderate|rain</item>
+        <item>65|Rain Heavy|rain_heavy</item>
+        <item>66|Freezing Rain Light|freezing_rain_light</item>
+        <item>67|Freezing Rain Heavy|freezing_rain_heavy</item>
+        <item>71|Snow Fall Slight|snow_light</item>
+        <item>73|Snow Fall Moderate|snow</item>
+        <item>75|Snow Fall Heavy|snow_heavy</item>
+        <item>77|Snow Grains|snow</item>
+        <item>80|Rain Showers Slight|rain_light</item>
+        <item>81|Rain Showers Moderate|rain</item>
+        <item>82|Rain Showers Violent|rain_heavy</item>
+        <item>85|Snow Showers Slight|snow_light</item>
+        <item>86|Snow Showers Heavy|snow_heavy</item>
+        <item>95|Thunderstorm|tstorm</item>
+        <item>96|Thunderstorm with Hail|tstorm</item>
+        <item>99|Heavy Thunderstorm|tstorm</item>
+    </string-array>
+</resources>

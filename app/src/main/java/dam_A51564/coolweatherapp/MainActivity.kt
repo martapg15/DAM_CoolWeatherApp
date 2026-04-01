@@ -48,6 +48,9 @@ class MainActivity : AppCompatActivity() {
     // Fused Location Provider client
     private lateinit var fusedLocationClient: FusedLocationProviderClient
 
+    private lateinit var weatherResources: Map<Int, WeatherResource>
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
@@ -92,6 +95,8 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             getCurrentLocation()
         }
+
+        weatherResources = getWeatherResources(this)
     }
 
     private fun weatherAPICall(lat: Float, long: Float): WeatherData? {
@@ -183,13 +188,20 @@ class MainActivity : AppCompatActivity() {
 
             val isDay = isDay(currentTime, sunriseTime, sunsetTime)
 
-            val weatherCodeMap = getWeatherCodeMap()
+            // Old version - hardcoded enum
+            /*val weatherCodeMap = getWeatherCodeMap()
             val weatherCode = weatherCodeMap[request.current_weather.weathercode]
             weatherImageName = when (weatherCode) {
                 WMOWeatherCode.CLEAR_SKY,
                 WMOWeatherCode.MAINLY_CLEAR,
                 WMOWeatherCode.PARTLY_CLOUDY -> if (isDay) "${weatherCode.image}day" else "${weatherCode.image}night"
                 else -> weatherCode?.image.toString()
+            }*/
+
+            val weatherInfo = weatherResources[request.current_weather.weathercode]
+            weatherImageName = when (request.current_weather.weathercode) {
+                0, 1, 2 -> if (isDay) "${weatherInfo?.image}day" else "${weatherInfo?.image}night"
+                else -> weatherInfo?.image ?: "cloudy" // Fallback if code not found
             }
 
             val res = getResources()

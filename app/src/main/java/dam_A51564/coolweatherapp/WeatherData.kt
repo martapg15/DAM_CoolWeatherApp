@@ -1,5 +1,7 @@
 package dam_A51564.coolweatherapp
 
+import android.content.Context
+
 data class WeatherData(
     var latitude: String,
     var longitude: String,
@@ -29,7 +31,31 @@ data class Daily(
     var sunset: ArrayList<String>
 )
 
-enum class WMOWeatherCode(var code: Int, var image: String) {
+data class WeatherResource(
+    val code: Int,
+    val description: String,
+    val image: String
+)
+
+fun getWeatherResources(context: Context): Map<Int, WeatherResource> {
+    val weatherMap = HashMap<Int, WeatherResource>()
+    val weatherCodes = context.resources.getStringArray(R.array.weather_codes)
+
+    for (item in weatherCodes) {
+        // Split the string "Code|Description|Image"
+        val parts = item.split("|")
+        if (parts.size == 3) {
+            val code = parts[0].toInt()
+            weatherMap[code] = WeatherResource(code, parts[1], parts[2])
+        }
+    }
+    return weatherMap
+}
+
+// The commented section below represents the previous hardcoded Enum implementation.
+// The new version retrieves weather data dynamically from XML resources (R.array.weather_codes)
+// and caches it in onCreate() for better performance and resource management.
+/*enum class WMOWeatherCode(var code: Int, var image: String) {
     CLEAR_SKY(0, "clear_"),
     MAINLY_CLEAR(1, "mostly_clear_"),
     PARTLY_CLOUDY(2, "partly_cloudy_"),
@@ -66,4 +92,4 @@ fun getWeatherCodeMap(): Map<Int, WMOWeatherCode> {
         weatherMap[it.code] = it
     }
     return weatherMap
-}
+}*/
