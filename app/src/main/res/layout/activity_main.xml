@@ -127,7 +127,7 @@
         android:id="@+id/textLat"
         android:layout_width="140dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="45dp"
         android:autofillHints=""
         android:background="#FFFFFF"
         android:ems="10"
