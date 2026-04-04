@@ -1,6 +1,7 @@
-package dam_A51564.coolweatherapp
+package dam_A51564.coolweatherapp.model
 
 import android.content.Context
+import dam_A51564.coolweatherapp.R
 
 data class WeatherData(
     var latitude: String,
