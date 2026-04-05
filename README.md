@@ -1,7 +1,7 @@
 # Assignment TP2 - Cool Weather App
 **Course:** Mobile Application Development (DAM)  
 **Student:** Marta Garcia (nº 51564)  
-**Date:** 2026-04-05  
+**Date:** 2026-04-12  
 **Repository URL:** https://github.com/martapg15/DAM_CoolWeatherApp  
 
 ---
